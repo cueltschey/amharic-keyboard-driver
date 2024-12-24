@@ -10,7 +10,6 @@ static const struct usb_device_id amharic_keyboard_id_table[] = {
     {}                            // Terminating entry
 };
 
-
 static int amharic_keyboard_probe(struct usb_interface *interface,
                                   const struct usb_device_id *id) {
   struct usb_device *dev = interface_to_usbdev(interface);
@@ -58,7 +57,6 @@ static struct usb_driver amharic_keyboard_driver = {
 };
 
 MODULE_DEVICE_TABLE(usb, amharic_keyboard_id_table);
-
 
 static int __init amharic_keyboard_init(void) {
   int retval;
